@@ -1,1 +1,5 @@
 A set of tools for creating strongly typed cover the XML document in accordance with the XSD scheme
+
+Source code:
+ git://github.com/ExM/XsdCoverage.git
+
