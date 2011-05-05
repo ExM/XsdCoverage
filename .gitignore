@@ -1,0 +1,11 @@
+*.suo
+*~
+*/obj/Debug
+*/obj/Release
+*/bin/Debug
+*/bin/Release
+*.userprefs
+*.pidb
+*.resources
+
+

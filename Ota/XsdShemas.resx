@@ -1,0 +1,937 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to alLow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data Types are done through the TypeConverter classes 
+    associated with the data Types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pAiRS.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed beLow.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.FormatteRS.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.FormatteRS.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="OpenTravel_CodeTable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OpenTravel_CodeTable.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="OTA_AirAvailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirAvailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirAvailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirAvailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirBookModifyRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirBookModifyRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirBookRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirBookRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirBookRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirBookRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirCheckIn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirCheckIn.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirCheckInRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirCheckInRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirCheckInRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirCheckInRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirCommonTypes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirCommonTypes.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirDemandTicketRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirDemandTicketRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirDemandTicketRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirDemandTicketRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirDetailsRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirDetailsRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirDetailsRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirDetailsRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirDisplayQueueRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirDisplayQueueRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirFareDisplayRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirFareDisplayRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirFareDisplayRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirFareDisplayRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirFlifoRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirFlifoRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirFlifoRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirFlifoRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirLowFareSearchRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirLowFareSearchRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirLowFareSearchRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirLowFareSearchRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirPreferences" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirPreferences.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirPriceRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirPriceRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirPriceRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirPriceRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirRulesRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirRulesRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirRulesRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirRulesRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirScheduleRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirScheduleRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirScheduleRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirScheduleRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirSeatMapRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirSeatMapRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AirSeatMapRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AirSeatMapRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AuthorizationRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AuthorizationRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_AuthorizationRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_AuthorizationRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CancelRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CancelRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CancelRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CancelRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CommonPrefs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CommonPrefs.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CommonTypes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CommonTypes.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="OTA_CruiseBookingDocumentRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseBookingDocumentRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseBookingDocumentRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseBookingDocumentRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseBookingHistoryRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseBookingHistoryRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseBookRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseBookRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseBookRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseBookRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseCabinAvailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseCabinAvailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseCabinAvailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseCabinAvailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseCabinHoldRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseCabinHoldRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseCabinHoldRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseCabinHoldRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseCabinUnHoldRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseCabinUnholdRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseCabinUnHoldRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseCabinUnholdRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseCancellationPricingRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseCancellationPricingRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseCancellationPricingRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseCancellationPricingRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseCategoryAvailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseCategoryAvailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseCategoryAvailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseCategoryAvailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseCommonTypes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseCommonTypes.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseDiningAvailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseDiningAvailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseDiningAvailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseDiningAvailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseFareAvailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseFareAvailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseFareAvailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseFareAvailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseFastSellRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseFastSellRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseInfoRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseInfoRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseInfoRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseInfoRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseItineraryDescRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseItineraryDescRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseItineraryDescRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseItineraryDescRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruisePaymentRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruisePaymentRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruisePaymentRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruisePaymentRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruisePkgAvailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruisePkgAvailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruisePkgAvailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruisePkgAvailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruisePNR_UpdateNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruisePNR_UpdateNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruisePNR_UpdateNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruisePNR_UpdateNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruisePriceBookingRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruisePriceBookingRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruisePriceBookingRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruisePriceBookingRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseSailAvailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseSailAvailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseSailAvailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseSailAvailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseShorexAvailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseShorexAvailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseShorexAvailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseShorexAvailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseSpecialServiceAvailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseSpecialServiceAvailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_CruiseSpecialServiceAvailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_CruiseSpecialServiceAvailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_DeleteRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_DeleteRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_DeleteRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_DeleteRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_DestActivityCapabilitiesRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_DestActivityCapabilitiesRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_DestActivityCapabilitiesRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_DestActivityCapabilitiesRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_DestActivityResRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_DestActivityResRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_DestActivityResRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_DestActivityResRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_DestinationActivity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_DestinationActivity.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_DynamicPkgAvailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_DynamicPkgAvailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_DynamicPkgAvailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_DynamicPkgAvailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_DynamicPkgBookRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_DynamicPkgBookRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_DynamicPkgBookRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_DynamicPkgBookRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_DynamicPkgCommonTypes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_DynamicPkgCommonTypes.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_DynamicPkgModifyNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_DynamicPkgModifyNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_DynamicPkgModifyNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_DynamicPkgModifyNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_DynamicPkgModifyRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_DynamicPkgModifyRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_ErrorRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_ErrorRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_FileAttachmentNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_FileAttachmentNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_FileAttachmentNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_FileAttachmentNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_GolfCommonTypes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_GolfCommonTypes.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_GolfCourseAvailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_GolfCourseAvailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_GolfCourseAvailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_GolfCourseAvailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_GolfCourseResRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_GolfCourseResRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_GolfCourseResRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_GolfCourseResRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_GolfCourseSearchRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_GolfCourseSearchRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_GolfCourseSearchRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_GolfCourseSearchRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelAvailGetRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelAvailGetRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelAvailGetRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelAvailGetRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelAvailNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelAvailNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelAvailNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelAvailNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelAvailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelAvailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelAvailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelAvailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelBookingRuleNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelBookingRuleNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelBookingRuleNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelBookingRuleNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelBookingRuleRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelBookingRuleRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelBookingRuleRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelBookingRuleRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelCommNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelCommNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelCommNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelCommNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelCommonTypes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelCommonTypes.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelContentDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelContentDescription.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelDescriptiveContentNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelDescriptiveContentNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelDescriptiveContentNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelDescriptiveContentNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelDescriptiveInfoRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelDescriptiveInfoRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelDescriptiveInfoRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelDescriptiveInfoRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelEvent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelEvent.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelEventRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelEventRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelEventRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelEventRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelGetMsgRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelGetMsgRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelGetMsgRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelGetMsgRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelInvAdjustRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelInvAdjustRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelInvAdjustRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelInvAdjustRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelInvBlockNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelInvBlockNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelInvBlockNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelInvBlockNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelInvBlockRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelInvBlockRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelInvBlockRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelInvBlockRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelInvCountNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelInvCountNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelInvCountNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelInvCountNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelInvCountRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelInvCountRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelInvCountRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelInvCountRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelInvNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelInvNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelInvNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelInvNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelInvSyncRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelInvSyncRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelInvSyncRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelInvSyncRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelPostEventNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelPostEventNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelPostEventNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelPostEventNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelPostEventRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelPostEventRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelPostEventRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelPostEventRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelPreferences" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelPreferences.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRateAmountNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRateAmountNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRateAmountNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRateAmountNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRatePlan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRatePlan.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRatePlanNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRatePlanNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRatePlanNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRatePlanNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRatePlanRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRatePlanRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRatePlanRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRatePlanRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelReservation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelReservation.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelResModifyNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelResModifyNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelResModifyNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelResModifyNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelResModifyRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelResModifyRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelResModifyRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelResModifyRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelResNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelResNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelResNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelResNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelResRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelResRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelResRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelResRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRFP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRFP.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRFP_MeetingNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRFP_MeetingNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRFP_MeetingNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRFP_MeetingNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRFP_MeetingRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRFP_MeetingRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRFP_MeetingRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRFP_MeetingRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRFP_TransientNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRFP_TransientNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRFP_TransientNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRFP_TransientNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRFP_TransientRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRFP_TransientRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRFP_TransientRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRFP_TransientRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRoomListRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRoomListRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelRoomListRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelRoomListRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelSearchRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelSearchRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelSearchRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelSearchRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelStatsNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelStatsNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelStatsNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelStatsNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelStatsRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelStatsRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelStatsRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelStatsRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelStayInfoNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelStayInfoNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelStayInfoNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelStayInfoNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelSummaryNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelSummaryNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_HotelSummaryNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_HotelSummaryNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_InsuranceBookRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_InsuranceBookRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_InsuranceBookRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_InsuranceBookRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_InsuranceCommonTypes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_InsuranceCommonTypes.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_InsurancePlanSearchRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_InsurancePlanSearchRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_InsurancePlanSearchRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_InsurancePlanSearchRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_InsuranceQuoteRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_InsuranceQuoteRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_InsuranceQuoteRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_InsuranceQuoteRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_LoyaltyAccountCreateRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_LoyaltyAccountCreateRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_LoyaltyAccountRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_LoyaltyAccountRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_LoyaltyCertificateCreateNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_LoyaltyCertificateCreateNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_LoyaltyCertificateCreateNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_LoyaltyCertificateCreateNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_LoyaltyCertificateCreateRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_LoyaltyCertificateCreateRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_LoyaltyCertificateCreateRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_LoyaltyCertificateCreateRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_LoyaltyCertificateRedemptionRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_LoyaltyCertificateRedemptionRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_LoyaltyCertificateRedemptionRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_LoyaltyCertificateRedemptionRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_LoyaltyCommonTypes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_LoyaltyCommonTypes.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_NotifReportRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_NotifReportRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_NotifReportRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_NotifReportRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_PingRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_PingRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_PingRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_PingRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_PkgAvailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_PkgAvailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_PkgAvailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_PkgAvailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_PkgBookRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_PkgBookRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_PkgBookRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_PkgBookRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_PkgCommonTypes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_PkgCommonTypes.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_PkgCostRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_PkgCostRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_PkgCostRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_PkgCostRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_PkgExtrasInfoRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_PkgExtrasInfoRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_PkgExtrasInfoRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_PkgExtrasInfoRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_PkgReservation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_PkgReservation.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_Profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_Profile.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_ProfileCreateRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_ProfileCreateRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_ProfileCreateRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_ProfileCreateRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_ProfileMergeRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_ProfileMergeRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_ProfileMergeRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_ProfileMergeRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_ProfileModifyRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_ProfileModifyRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_ProfileModifyRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_ProfileModifyRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_ProfileReadRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_ProfileReadRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_PurchaseItemRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_PurchaseItemRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_PurchaseItemRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_PurchaseItemRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_RailAvailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_RailAvailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_RailAvailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_RailAvailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="OTA_RailBookRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_RailBookRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_RailBookRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_RailBookRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_RailCommonTypes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_RailCommonTypes.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_RailRetrieveRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_RailRetrieveRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_ReadRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_ReadRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_ResRetrieveRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_ResRetrieveRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_ScreenTextRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_ScreenTextRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_ScreenTextRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_ScreenTextRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_SimpleTypes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_SimpleTypes.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_TourAvailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_TourAvailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_TourAvailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_TourAvailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_TourInformation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_TourInformation.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_TourInformationNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_TourInformationNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_TourInformationNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_TourInformationNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_TourSearchRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_TourSearchRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_TourSearchRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_TourSearchRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_TravelItineraryReadRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_TravelItineraryReadRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_TravelItineraryRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_TravelItineraryRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehAvailRateRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehAvailRateRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehAvailRateRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehAvailRateRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehCancelRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehCancelRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehCancelRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehCancelRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehCheckInRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehCheckInRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehCheckInRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehCheckInRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehCheckOutRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehCheckOutRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehCheckOutRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehCheckOutRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehExchangeRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehExchangeRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehExchangeRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehExchangeRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehicleCommonTypes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehicleCommonTypes.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehLocDetailRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehLocDetailRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehLocDetailRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehLocDetailRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehLocDetailsNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehLocDetailsNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehLocDetailsNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehLocDetailsNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehLocSearchRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehLocSearchRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehLocSearchRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehLocSearchRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehModifyRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehModifyRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehModifyRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehModifyRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehRateNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehRateNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehRateNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehRateNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehRateRuleNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehRateRuleNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehRateRuleNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehRateRuleNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehRateRuleRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehRateRuleRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehRateRuleRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehRateRuleRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehResNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehResNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehResNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehResNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehResRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehResRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehResRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehResRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehResStatusNotifRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehResStatusNotifRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehResStatusNotifRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehResStatusNotifRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehRetResRQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehRetResRQ.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="OTA_VehRetResRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>XsdShemas\OTA_VehRetResRS.xsd;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+</root>

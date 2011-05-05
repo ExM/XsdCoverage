@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2fc7d703-bc3d-4216-a8d9-df7b6becd446}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XsdCoverage.Test</RootNamespace>
+    <AssemblyName>XsdCoverage.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="nunit.framework, Version=2.5.9.10348, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NUnit-2.5.9.10348\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseOrder\PurchaseOrderType.cs" />
+    <Compile Include="Tests\ReadFields.cs" />
+    <Compile Include="PurchaseOrderXsd.cs" />
+    <Compile Include="PurchaseOrder\USAddress.cs" />
+    <Compile Include="PurchaseOrder\Items.cs" />
+    <Compile Include="PurchaseOrder\Comment.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Folder Include="PurchaseOrderSchemas\" />
+    <Folder Include="PurchaseOrder\" />
+    <Folder Include="Tests\" />
+    <Folder Include="XmlExamples\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PurchaseOrderSchemas\PurchaseOrder.xsd" />
+    <None Include="XmlExamples\po.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XsdCoverage\XsdCoverage.csproj">
+      <Project>{3399D642-0519-43BD-A22C-7DB12D2CBC4A}</Project>
+      <Name>XsdCoverage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\W3C.XMLSchema\W3C.XMLSchema.csproj">
+      <Project>{61AC789A-D3CD-4C16-AC47-84C8768F70E3}</Project>
+      <Name>W3C.XMLSchema</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

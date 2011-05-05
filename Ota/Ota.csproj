@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9E951AE2-50D1-4156-873D-DC4980241C9A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ota</RootNamespace>
+    <AssemblyName>Ota</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ResourceResolver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CommonTypes\SourceType.cs" />
+    <Compile Include="CommonTypes\POS_Type.cs" />
+    <Compile Include="HotelCommonTypes\UniqueID_Type.cs" />
+    <Compile Include="HotelReservation\HotelResRequestType.cs" />
+    <Compile Include="HotelReservation\HotelReservationsType.cs" />
+    <Compile Include="HotelResRQ\HotelResRQ.cs" />
+    <Compile Include="SimpleTypes\AlphaLength3.cs" />
+    <Compile Include="OtaXsd.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XsdShemas\OpenTravel_CodeTable.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <EmbeddedResource Include="XsdShemas.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="XsdShemas\OTA_AirAvailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirAvailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirBookModifyRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirBookRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirBookRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirCheckIn.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirCheckInRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirCheckInRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirCommonTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirDemandTicketRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirDemandTicketRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirDetailsRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirDetailsRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirDisplayQueueRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirFareDisplayRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirFareDisplayRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirFlifoRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirFlifoRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirLowFareSearchRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirLowFareSearchRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirPreferences.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirPriceRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirPriceRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirRulesRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirRulesRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirScheduleRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirScheduleRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirSeatMapRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AirSeatMapRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AuthorizationRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_AuthorizationRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CancelRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CancelRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CommonPrefs.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CommonTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseBookingDocumentRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseBookingDocumentRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseBookingHistoryRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseBookRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseBookRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseCabinAvailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseCabinAvailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseCabinHoldRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseCabinHoldRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseCabinUnholdRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseCabinUnholdRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseCancellationPricingRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseCancellationPricingRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseCategoryAvailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseCategoryAvailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseCommonTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseDiningAvailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseDiningAvailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseFareAvailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseFareAvailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseFastSellRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseInfoRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseInfoRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseItineraryDescRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseItineraryDescRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruisePaymentRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruisePaymentRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruisePkgAvailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruisePkgAvailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruisePNR_UpdateNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruisePNR_UpdateNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruisePriceBookingRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruisePriceBookingRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseSailAvailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseSailAvailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseShorexAvailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseShorexAvailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseSpecialServiceAvailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_CruiseSpecialServiceAvailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_DeleteRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_DeleteRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_DestActivityCapabilitiesRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_DestActivityCapabilitiesRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_DestActivityResRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_DestActivityResRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_DestinationActivity.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_DynamicPkgAvailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_DynamicPkgAvailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_DynamicPkgBookRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_DynamicPkgBookRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_DynamicPkgCommonTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_DynamicPkgModifyNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_DynamicPkgModifyNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_DynamicPkgModifyRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_ErrorRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_FileAttachmentNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_FileAttachmentNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_GolfCommonTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_GolfCourseAvailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_GolfCourseAvailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_GolfCourseResRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_GolfCourseResRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_GolfCourseSearchRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_GolfCourseSearchRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelAvailGetRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelAvailGetRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelAvailNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelAvailNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelAvailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelAvailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelBookingRuleNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelBookingRuleNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelBookingRuleRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelBookingRuleRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelCommNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelCommNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelCommonTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelContentDescription.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelDescriptiveContentNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelDescriptiveContentNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelDescriptiveInfoRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelDescriptiveInfoRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelEvent.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelEventRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelEventRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelGetMsgRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelGetMsgRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelInvAdjustRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelInvAdjustRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelInvBlockNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelInvBlockNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelInvBlockRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelInvBlockRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelInvCountNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelInvCountNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelInvCountRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelInvCountRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelInvNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelInvNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelInvSyncRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelInvSyncRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelPostEventNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelPostEventNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelPostEventRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelPostEventRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelPreferences.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRateAmountNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRateAmountNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRatePlan.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRatePlanNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRatePlanNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRatePlanRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRatePlanRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelReservation.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelResModifyNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelResModifyNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelResModifyRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelResModifyRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelResNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelResNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelResRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelResRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRFP.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRFP_MeetingNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRFP_MeetingNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRFP_MeetingRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRFP_MeetingRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRFP_TransientNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRFP_TransientNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRFP_TransientRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRFP_TransientRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRoomListRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelRoomListRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelSearchRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelSearchRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelStatsNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelStatsNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelStatsRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelStatsRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelStayInfoNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelStayInfoNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelSummaryNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_HotelSummaryNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_InsuranceBookRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_InsuranceBookRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_InsuranceCommonTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_InsurancePlanSearchRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_InsurancePlanSearchRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_InsuranceQuoteRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_InsuranceQuoteRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_LoyaltyAccountCreateRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_LoyaltyAccountRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_LoyaltyCertificateCreateNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_LoyaltyCertificateCreateNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_LoyaltyCertificateCreateRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_LoyaltyCertificateCreateRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_LoyaltyCertificateRedemptionRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_LoyaltyCertificateRedemptionRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_LoyaltyCommonTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_NotifReportRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_NotifReportRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_PingRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_PingRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_PkgAvailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_PkgAvailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_PkgBookRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_PkgBookRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_PkgCommonTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_PkgCostRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_PkgCostRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_PkgExtrasInfoRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_PkgExtrasInfoRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_PkgReservation.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_Profile.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_ProfileCreateRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_ProfileCreateRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_ProfileMergeRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_ProfileMergeRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_ProfileModifyRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_ProfileModifyRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_ProfileReadRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_PurchaseItemRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_PurchaseItemRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_RailAvailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_RailAvailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_RailBookRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_RailBookRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_RailCommonTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_RailRetrieveRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_ReadRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_ResRetrieveRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_ScreenTextRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_ScreenTextRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_SimpleTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_TourAvailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_TourAvailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_TourInformation.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_TourInformationNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_TourInformationNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_TourSearchRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_TourSearchRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_TravelItineraryReadRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_TravelItineraryRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehAvailRateRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehAvailRateRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehCancelRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehCancelRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehCheckInRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehCheckInRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehCheckOutRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehCheckOutRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehExchangeRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehExchangeRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehicleCommonTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehLocDetailRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehLocDetailRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehLocDetailsNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehLocDetailsNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehLocSearchRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehLocSearchRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehModifyRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehModifyRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehRateNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehRateNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehRateRuleNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehRateRuleNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehRateRuleRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehRateRuleRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehResNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehResNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehResRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehResRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehResStatusNotifRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehResStatusNotifRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehRetResRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XsdShemas\OTA_VehRetResRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XsdShemas\OpenTravel_CodeList_20100322.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <ProjectReference Include="..\XsdCoverage\XsdCoverage.csproj">
+      <Project>{3399D642-0519-43BD-A22C-7DB12D2CBC4A}</Project>
+      <Name>XsdCoverage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\W3C.XMLSchema\W3C.XMLSchema.csproj">
+      <Project>{61AC789A-D3CD-4C16-AC47-84C8768F70E3}</Project>
+      <Name>W3C.XMLSchema</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
