@@ -16,7 +16,7 @@ namespace XsdCoverage.Test
 		{
 			XDocument doc = XDocument.Parse(File.ReadAllText("XmlExamples/po.xml"));
 			
-			PurchaseOrderType po = new PurchaseOrderType(null, doc.Root);
+			PurchaseOrderType po = new PurchaseOrderType(doc.Root);
 			XAttribute at = po.OrderDate.GetTarget();
 			
 			Assert.AreEqual("1999-10-20", at.Value);
@@ -27,7 +27,7 @@ namespace XsdCoverage.Test
 		{
 			XDocument doc = XDocument.Parse(File.ReadAllText("XmlExamples/po.xml"));
 			
-			PurchaseOrderType po = new PurchaseOrderType(null, doc.Root);
+			PurchaseOrderType po = new PurchaseOrderType(doc.Root);
 			XElement el = po.Comment.GetTarget();
 			Assert.AreEqual("Hurry, my lawn is going wild!", el.Value);
 		}

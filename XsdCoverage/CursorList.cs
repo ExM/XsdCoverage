@@ -89,7 +89,7 @@ namespace XsdCoverage
 		{
 			if (target == null)
 				throw new InvalidOperationException("elements have been removed");
-			T result = CursorCreater<T, XElement>.Create(_cursor, target);
+			T result = CursorCreater<T, XElement>.Create(target);
 			result.Build = _cursor.Build;
 			return result;
 		}

@@ -27,7 +27,7 @@ namespace XsdCoverage
 				resultTarget = new XElement(CursorAttributes<T, XElement>.NameSpace + localName);
 				cursor.Target.Add(resultTarget);
 			}
-			T result = CursorCreater<T, XElement>.Create(cursor, resultTarget);
+			T result = CursorCreater<T, XElement>.Create(resultTarget);
 			result.Build = cursor.Build;
 			return result;
 		}
@@ -47,7 +47,7 @@ namespace XsdCoverage
 				resultTarget = new XAttribute(localName, string.Empty);
 				cursor.Target.Add(resultTarget);
 			}
-			T result = CursorCreater<T, XAttribute>.Create(cursor, resultTarget);
+			T result = CursorCreater<T, XAttribute>.Create(resultTarget);
 			result.Build = cursor.Build;
 			return result;
 		}
