@@ -13,15 +13,12 @@ namespace Ota.SimpleTypes
 	[NameSpace(OtaXsd.NameSpace)]
 	public class AlphaLength3 : ICursor<XAttribute>
 	{
-		private readonly ICursor<XElement> _parent;
-		ICursor<XElement> ICursor<XAttribute>.Parent { get { return _parent; } }
 		private readonly XAttribute _target;
 		XAttribute ICursor<XAttribute>.Target { get{ return _target; } }
 		bool ICursor<XAttribute>.Build { get; set; }
 
-		public AlphaLength3(ICursor<XElement> p, XAttribute t)
+		public AlphaLength3(XAttribute t)
 		{
-			_parent = p;
 			_target = t;
 		}
 

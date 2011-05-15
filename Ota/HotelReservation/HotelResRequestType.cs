@@ -16,8 +16,6 @@ namespace Ota.HotelReservation
 	[Order("HotelReservations", "UniqueID", "POS")]
 	public class HotelResRequestType: ICursor<XElement>
 	{
-		private readonly ICursor<XElement> _parent;
-		ICursor<XElement> ICursor<XElement>.Parent { get { return _parent; } }
 		private readonly XElement _target;
 		XElement ICursor<XElement>.Target { get{ return _target; } }
 		bool ICursor<XElement>.Build { get; set; }
@@ -57,9 +55,8 @@ namespace Ota.HotelReservation
 			}
 		}
 
-		internal HotelResRequestType(ICursor<XElement> p, XElement t)
+		internal HotelResRequestType(XElement t)
 		{
-			_parent = p;
 			_target = t;
 			//POS = new POS_Type(this, "POS", new Occurs(0, 1));
 			//HotelReservations = new HotelReservationsType(this, "HotelReservations", new Occurs(0, 1));
