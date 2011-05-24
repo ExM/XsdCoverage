@@ -38,13 +38,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CursorList.cs" />
-    <Compile Include="ICursor.cs" />
     <Compile Include="CursorExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CursorCreater2.cs" />
     <Compile Include="OrderAttribute.cs" />
     <Compile Include="NameSpaceAttribute.cs" />
     <Compile Include="CursorAttributes2.cs" />
+    <Compile Include="Cursor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

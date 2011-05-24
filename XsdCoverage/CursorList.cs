@@ -5,12 +5,12 @@ using System.Collections.Generic;
 
 namespace XsdCoverage
 {
-	public class CursorList<T>: IList<T> where T : ICursor<XElement>
+	public class CursorList<T>: IList<T> where T : Cursor<XElement>
 	{
-		private ICursor<XElement> _cursor;
+		private Cursor<XElement> _cursor;
 		private XName _childsName;
 
-		public CursorList(ICursor<XElement> cursor, XName childsName)
+		public CursorList(Cursor<XElement> cursor, XName childsName)
 		{
 			_cursor = cursor;
 			_childsName = childsName;

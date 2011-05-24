@@ -8,12 +8,12 @@ namespace XsdCoverage
 {
 	public static class CursorExtensions
 	{
-		public static CursorList<T> Elements<T>(this ICursor<XElement> cursor, string localName) where T : ICursor<XElement>
+		public static CursorList<T> Elements<T>(this Cursor<XElement> cursor, string localName) where T : Cursor<XElement>
 		{
 			return new CursorList<T>(cursor, CursorAttributes<T, XElement>.NameSpace + localName);
 		}
 
-		public static T Element<T>(this ICursor<XElement> cursor, string localName) where T : ICursor<XElement>
+		public static T Element<T>(this Cursor<XElement> cursor, string localName) where T : Cursor<XElement>
 		{
 			XElement resultTarget = cursor.Target.Element(CursorAttributes<T, XElement>.NameSpace + localName);
 			if (resultTarget == null)
@@ -32,12 +32,12 @@ namespace XsdCoverage
 			return result;
 		}
 
-		public static XElement GetTarget(this ICursor<XElement> cursor)
+		public static XElement GetTarget(this Cursor<XElement> cursor)
 		{
 			return cursor.Target;
 		}
 
-		public static T Attribute<T>(this ICursor<XElement> cursor, string localName) where T : ICursor<XAttribute>
+		public static T Attribute<T>(this Cursor<XElement> cursor, string localName) where T : Cursor<XAttribute>
 		{
 			XAttribute resultTarget = cursor.Target.Attribute(localName); //HACK: почему атрибуты не включены в пространство имен?
 			if (resultTarget == null)
@@ -52,12 +52,12 @@ namespace XsdCoverage
 			return result;
 		}
 
-		public static XAttribute GetTarget(this ICursor<XAttribute> cursor)
+		public static XAttribute GetTarget(this Cursor<XAttribute> cursor)
 		{
 			return cursor.Target;
 		}
 
-		public static void ToBuild(this ICursor<XElement> cursor)
+		public static void ToBuild(this Cursor<XElement> cursor)
 		{
 			cursor.Build = true;
 		}

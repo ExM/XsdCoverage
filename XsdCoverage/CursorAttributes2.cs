@@ -9,7 +9,7 @@ using System.Reflection;
 namespace XsdCoverage
 {
 	public static class CursorAttributes<TCursor, TTarget>
-		where TCursor: ICursor<TTarget>
+		where TCursor: Cursor<TTarget>
 		where TTarget: XObject
 	{
 		public static readonly XNamespace NameSpace;
