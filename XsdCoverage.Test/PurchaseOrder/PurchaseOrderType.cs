@@ -9,20 +9,8 @@ namespace PurchaseOrder
 {
 	[Order("shipTo", "billTo", "comment", "items")]
 	[NameSpace(PurchaseOrderXsd.NameSpace)]
-	public class PurchaseOrderType: ICursor<XElement>
+	public class PurchaseOrderType: Cursor<XElement>
 	{
-		private readonly ICursor<XElement> _parent;
-		ICursor<XElement> ICursor<XElement>.Parent { get { return _parent; } }
-		private readonly XElement _target;
-		XElement ICursor<XElement>.Target { get{ return _target; } }
-		bool ICursor<XElement>.Build { get; set; }
-		
-		public PurchaseOrderType(ICursor<XElement> p, XElement t)
-		{
-			_parent = p;
-			_target = t;
-		}
-		
 		public USAddress ShipTo
 		{
 			get

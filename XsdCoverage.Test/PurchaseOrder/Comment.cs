@@ -10,10 +10,6 @@ namespace PurchaseOrder
 	[NameSpace(PurchaseOrderXsd.NameSpace)]
 	public class Comment: String<XElement>
 	{
-		public Comment(ICursor<XElement> p, XElement t)
-			:base(p, t)
-		{
-		}
 	}
 }
 

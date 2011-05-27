@@ -5,21 +5,25 @@ using System.Collections.Generic;
 
 namespace XsdCoverage
 {
-	public class CursorList<T>: IList<T> where T : Cursor<XElement>
+	public abstract class CursorList<T>: IList<T> where T : Cursor<XElement>
 	{
-		private Cursor<XElement> _cursor;
-		private XName _childsName;
+		protected Cursor<XElement> _parent = null;
+		protected T _target = null;
+		protected NotFoundResult _mode = NotFoundResult.Throw;
+		
+		private XName _name;
 
-		public CursorList(Cursor<XElement> cursor, XName childsName)
+		public CursorList(Cursor<XElement> p, XName name)
 		{
-			_cursor = cursor;
-			_childsName = childsName;
+			_parent = p;
+			_name = name;
 		}
 
 		public T this[int index]
 		{
 			get
 			{
+				/*
 				if (index < 1)
 					throw new IndexOutOfRangeException("allowed only a value greater than or equal to 1");
 
@@ -41,6 +45,8 @@ namespace XsdCoverage
 				}
 
 				return CreateItem(target);
+				*/
+				return null;
 			}
 			set
 			{
@@ -68,23 +74,26 @@ namespace XsdCoverage
 
 		public void Clear()
 		{
-			foreach (XElement el in _cursor.Target.Elements(_childsName).ToList())
-				el.Remove();
+			//foreach (XElement el in _cursor.Target.Elements(_childsName).ToList())
+			//	el.Remove();
 		}
 
 		public int Count
 		{
 			get
 			{
-				return _cursor.Target.Elements(_childsName).Count();
+				throw new NotImplementedException();
+				//return _cursor.Target.Elements(_childsName).Count();
 			}
 		}
 
 		public IEnumerator<T> GetEnumerator()
 		{
-			return _cursor.Target.Elements(_childsName).Select(CreateItem).GetEnumerator();
+			throw new NotImplementedException();
+			//return _cursor.Target.Elements(_childsName).Select(CreateItem).GetEnumerator();
 		}
-
+		
+		/*
 		private T CreateItem(XElement target)
 		{
 			if (target == null)
@@ -93,7 +102,8 @@ namespace XsdCoverage
 			result.Build = _cursor.Build;
 			return result;
 		}
-
+		*/
+		
 		#region not implemented
 
 		public int IndexOf(T item)
