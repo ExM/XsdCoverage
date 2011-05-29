@@ -45,8 +45,8 @@
     <Compile Include="NameSpaceAttribute.cs" />
     <Compile Include="CursorAttributes2.cs" />
     <Compile Include="NotFoundResult.cs" />
+    <Compile Include="CursorBase.cs" />
     <Compile Include="Cursor1.cs" />
-    <Compile Include="Cursor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

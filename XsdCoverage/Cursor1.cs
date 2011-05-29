@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace XsdCoverage
 {
-	public abstract class Cursor<T>: Cursor where T: XObject
+	public abstract class Cursor<T>: CursorBase
 	{
-		protected T _target = null;
+		protected T _target = default(T);
 		
 		public T GetTarget()
 		{

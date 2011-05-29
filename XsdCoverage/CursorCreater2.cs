@@ -8,6 +8,7 @@ using System.Reflection;
 
 namespace XsdCoverage
 {
+	/*
 	public static class CursorCreater<TCursor, TTarget>
 		where TCursor: Cursor<TTarget>
 		where TTarget: XObject
@@ -33,4 +34,5 @@ namespace XsdCoverage
 			return _creater(parent, target);
 		}
 	}
+	*/
 }

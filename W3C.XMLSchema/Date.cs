@@ -10,7 +10,6 @@ namespace W3C.XMLSchema
 	/// </summary>
 	[NameSpace(XMLSchemaXsd.NameSpace)]
 	public class Date<T>: Cursor<T>
-		where T: XObject
 	{
 		
 	}

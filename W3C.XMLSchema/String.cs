@@ -7,7 +7,6 @@ namespace W3C.XMLSchema
 {
 	[NameSpace(XMLSchemaXsd.NameSpace)]
 	public class String<T>: Cursor<T>
-		where T: XObject
 	{
 		
 	}

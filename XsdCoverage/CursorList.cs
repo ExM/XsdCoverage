@@ -5,19 +5,9 @@ using System.Collections.Generic;
 
 namespace XsdCoverage
 {
-	public abstract class CursorList<T>: IList<T> where T : Cursor<XElement>
+	public abstract class CursorList<T>: CursorBase, IList<T>
+		where T : Cursor<XElement>
 	{
-		protected Cursor<XElement> _parent = null;
-		protected T _target = null;
-		protected NotFoundResult _mode = NotFoundResult.Throw;
-		
-		private XName _name;
-
-		public CursorList(Cursor<XElement> p, XName name)
-		{
-			_parent = p;
-			_name = name;
-		}
 
 		public T this[int index]
 		{
