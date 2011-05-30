@@ -14,14 +14,8 @@ namespace Ota.HotelReservation
 	/// </summary>
 	[NameSpace(OtaXsd.NameSpace)]
 	[Order("HotelReservations", "UniqueID", "POS")]
-	public class HotelResRequestType: ICursor<XElement>
+	public class HotelResRequestType: Cursor<XElement>
 	{
-		private readonly ICursor<XElement> _parent;
-		ICursor<XElement> ICursor<XElement>.Parent { get { return _parent; } }
-		private readonly XElement _target;
-		XElement ICursor<XElement>.Target { get{ return _target; } }
-		bool ICursor<XElement>.Build { get; set; }
-
 		/// <summary>
 		/// A collection of hotel reservations.
 		/// </summary>
@@ -57,13 +51,5 @@ namespace Ota.HotelReservation
 			}
 		}
 
-		internal HotelResRequestType(ICursor<XElement> p, XElement t)
-		{
-			_parent = p;
-			_target = t;
-			//POS = new POS_Type(this, "POS", new Occurs(0, 1));
-			//HotelReservations = new HotelReservationsType(this, "HotelReservations", new Occurs(0, 1));
-			//UniqueID = new UniqueID_Type(this, "UniqueID", new Occurs(0, 2));
-		}
 	}
 }

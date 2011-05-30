@@ -10,48 +10,64 @@ namespace XsdCoverage
 	{
 		public static CursorList<T> Elements<T>(this Cursor<XElement> cursor, string localName) where T : Cursor<XElement>
 		{
-			throw new NotImplementedException();
-			//return new CursorList<T>(cursor, CursorAttributes<T, XElement>.NameSpace + localName);
+			CursorList<T> result = new CursorList<T>();
+			result.SetParent(cursor);
+			result.SetName(CursorAttributes<T, XElement>.NameSpace + localName);
+			result.SetReadMode(cursor.GetReadMode());
+			return result;
 		}
-
-		public static T Element<T>(this Cursor<XElement> cursor, string localName) where T : Cursor<XElement>
+		
+		public static T Element<T>(this Cursor<XElement> cursor, string localName)
+			where T : Cursor<XElement>, new()
 		{
-			throw new NotImplementedException();
-			/*
-			XElement resultTarget = cursor.Target.Element(CursorAttributes<T, XElement>.NameSpace + localName);
+			XName name = CursorAttributes<T, XElement>.NameSpace + localName;
+			NotFoundResult mode = cursor.GetReadMode();
+			XElement resultTarget = cursor.GetTarget().Element(name);
 			if (resultTarget == null)
 			{
-				if (!cursor.Build)
+				if (mode == NotFoundResult.Throw)
 				{
-
 					throw new FormatException(string.Format("element `{0}' not found in {1}",
-						CursorAttributes<T, XElement>.NameSpace + localName, cursor.Target.GetAbsoluteXPath()));
+						name, cursor.GetTarget().GetAbsoluteXPath()));
 				}
-				resultTarget = new XElement(CursorAttributes<T, XElement>.NameSpace + localName);
-				cursor.Target.Add(resultTarget);
+				else if(mode == NotFoundResult.Default)
+				{
+					resultTarget = new XElement(CursorAttributes<T, XElement>.NameSpace + localName);
+					cursor.GetTarget().Add(resultTarget); //TODO: учесть порядок
+				}
 			}
-			T result = CursorCreater<T, XElement>.Create(cursor, resultTarget);
-			result.Build = cursor.Build;
+			T result = new T();
+			result.SetParent(cursor);
+			result.SetTarget(resultTarget);
+			result.SetName(name);
+			result.SetReadMode(mode);
 			return result;
-			*/
 		}
-
-		public static T Attribute<T>(this Cursor<XElement> cursor, string localName) where T : Cursor<XAttribute>
+		
+		public static T Attribute<T>(this Cursor<XElement> cursor, string localName)
+			where T : Cursor<XAttribute>, new()
 		{
-			throw new NotImplementedException();
-			/*
-			XAttribute resultTarget = cursor.Target.Attribute(localName); //HACK: почему атрибуты не включены в пространство имен?
+			NotFoundResult mode = cursor.GetReadMode();
+			XAttribute resultTarget = cursor.GetTarget().Attribute(localName); //HACK: почему атрибуты не включены в пространство имен?
 			if (resultTarget == null)
 			{
-				if (!cursor.Build)
-					throw new FormatException(string.Format("attribute `{0}' not found", localName));
-				resultTarget = new XAttribute(localName, string.Empty);
-				cursor.Target.Add(resultTarget);
+				if (mode == NotFoundResult.Throw)
+				{
+					throw new FormatException(string.Format("attribute `{0}' not found in {1}",
+						localName, cursor.GetTarget().GetAbsoluteXPath()));
+				}
+				else if(mode == NotFoundResult.Default)
+				{
+					resultTarget = new XAttribute(localName, string.Empty);
+					cursor.GetTarget().Add(resultTarget);
+				}
 			}
-			T result = CursorCreater<T, XAttribute>.Create(cursor, resultTarget);
-			result.Build = cursor.Build;
+			T result = new T();
+			result.SetParent(cursor);
+			result.SetTarget(resultTarget);
+			result.SetName(CursorAttributes<T, XAttribute>.NameSpace + localName);
+			result.SetReadMode(mode);
 			return result;
-			*/
 		}
 		
 		

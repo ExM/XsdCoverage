@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 namespace XsdCoverage
 {
-	public abstract class CursorList<T>: CursorBase, IList<T>
+	public sealed class CursorList<T>: CursorBase, IList<T>
 		where T : Cursor<XElement>
 	{
-
+		
 		public T this[int index]
 		{
 			get
@@ -36,7 +36,8 @@ namespace XsdCoverage
 
 				return CreateItem(target);
 				*/
-				return null;
+				//return null;
+				throw new NotImplementedException();
 			}
 			set
 			{

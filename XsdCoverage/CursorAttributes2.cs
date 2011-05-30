@@ -8,10 +8,8 @@ using System.Reflection;
 
 namespace XsdCoverage
 {
-	/*
 	public static class CursorAttributes<TCursor, TTarget>
 		where TCursor: Cursor<TTarget>
-		where TTarget: XObject
 	{
 		public static readonly XNamespace NameSpace;
 		public static readonly IList<string> Order;
@@ -34,5 +32,4 @@ namespace XsdCoverage
 				Order = null;
 		}
 	}
-	*/
 }

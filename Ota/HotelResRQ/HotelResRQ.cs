@@ -14,9 +14,6 @@ namespace Ota
 	[NameSpace(OtaXsd.NameSpace)]
 	public class HotelResRQ : HotelResRequestType
 	{
-		public HotelResRQ(ICursor<XElement> p, XElement t)
-			: base(p, t)
-		{
-		}
+
 	}
 }

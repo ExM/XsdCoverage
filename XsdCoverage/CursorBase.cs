@@ -20,6 +20,11 @@ namespace XsdCoverage
 			_parent = p;
 		}
 		
+		public NotFoundResult GetReadMode()
+		{
+			return _mode;
+		}
+		
 		public void SetReadMode(NotFoundResult m)
 		{
 			_mode = m;

@@ -44,8 +44,10 @@ namespace OtaTest
 			XDocument doc = XDocument.Load("OTA_HotelResRQ.xml");
 			Console.WriteLine(doc.ToString());
 
-			HotelResRQ req = new HotelResRQ(null, doc.Root);
-
+			HotelResRQ req = new HotelResRQ();
+			req.SetTarget(doc.Root);
+			
+			
 			Console.WriteLine("###");
 			XElement hres = req.HotelReservations.GetTarget();
 			Console.WriteLine(hres);
@@ -59,7 +61,7 @@ namespace OtaTest
 			Console.WriteLine(cur.Value);
 
 			Console.WriteLine("###");
-			req.ToBuild();
+			req.SetReadMode(NotFoundResult.Default);
 			XElement uid = req.UniqueID[1].GetTarget();
 			Console.WriteLine(uid);
 
